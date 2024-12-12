@@ -1,0 +1,42 @@
+{% load static %}
+<nav  class="navbar  navbar-expand-lg  bg-body-tertiary ">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="text-decoration: none" href="{% url 'homePage' %}">
+       Hima
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item " >
+            <a class="nav-link " aria-current="page" href="{% url 'homePage' %}" style="text-decoration: none;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link "style="text-decoration: none;" href="{% url 'aboutusPage' %}">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " style="text-decoration: none;" href="{% url 'menuPage' %}">Menu</a>
+          </li>
+       
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"style="text-decoration: none;" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Category
+            </a>
+            <ul class="dropdown-menu">
+                {% for cat in infoCategories %}
+                <li><a class="dropdown-item" href="{% url 'categoryPage' cat.pk %}">{{cat.category_name}}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link "style="text-decoration: none;" href="{% url 'contactPage' %}">Contact</a>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+

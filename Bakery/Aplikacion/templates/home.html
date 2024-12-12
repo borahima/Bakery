@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{%  load static %}
+{% block content %}
+<!--carousel-->
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'img/fq1.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block text-white ">
+        <h5 style="font-size: 70px; color: rgb(255, 251, 251); font-family:Sofia, sans-serif";> Where Tradition Meets Taste  </h5>
+        <p> At Hima, we believe that every moment is made better with the comforting warmth of fresh, handcrafted baked goods. From the softest breads to the most indulgent pastries, each item is baked with care, using only the finest ingredients and time-honored recipes. Whether you're looking for your morning treat, a special dessert, or something savory, we have something to delight every palate.
+          </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/dessert-5105032_1280.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="font-size: 70px; color: rgb(255, 251, 251); font-family:Sofia, sans-serif";>We bake with pasion</h5>
+        <p>Step into our bakery, where the smell of freshly baked bread welcomes you, and our friendly team is ready to serve you with a smile. We're passionate about making your day a little sweeter, one bite at a time.
+          Discover the joy of homemade flavors with us – baked fresh daily, just for you.</p>
+      </div>
+    </div>
+   
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!--Fakte-->
+<div class="container-xxl py-6">
+  <div class="container">
+      <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+              <div class="fact-item bg-yellow-100 rounded text-center h-100 p-5">
+                  <i class="fa-regular fa-calendar fa-4x mb-4"></i>
+                  <p class="mb-2">Years Experience</p>
+                  <h1 class="display-5 mb-0" data-toggle="counter-up">50</h1>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+              <div class="fact-item bg-$orange-200 rounded text-center h-100 p-5">
+                  <i class="fa fa-users fa-4x  mb-4"></i>
+                  <p class="mb-2">Skilled Professionals</p>
+                  <h1 class="display-5 mb-0" data-toggle="counter-up">175</h1>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+              <div class="fact-item bg-$orange-200 rounded text-center h-100 p-5">
+                  <i class="fa fa-bread-slice fa-4x mb-4"></i>
+                  <p class="mb-2">Total Products</p>
+                  <h1 class="display-5 mb-0" data-toggle="counter-up">135</h1>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.7s">
+              <div class="fact-item bg-$orange-200 rounded text-center h-100 p-5">
+                  <i class="fa fa-cart-plus fa-4x  mb-4"></i>
+                  <p class="mb-2">Order Everyday</p>
+                  <h1 class="display-5 mb-0" data-toggle="counter-up">9357</h1>
+              </div>
+          </div>
+      </div>
+  </div>
+</div><br><br>
+
+<div  uk-slideshow="animation: push; parallax: true;">
+
+    <div class="uk-slideshow-items" style="height: 250px; width: 200px;">
+        <div>
+            <img src="{% static 'img/bread-4061143_1280.jpg' %}"   alt="" uk-cover>
+        </div>
+        <div>
+            <img src="{% static 'img/fq1.jpg' %}" alt="" uk-cover>
+        </div>
+        <div>
+            <img src="{% static 'img/dessert-5105032_1280.jpg' %}" alt="" uk-cover>
+        </div>
+    </div>
+
+    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+<!--service-->
+<div class="container-xxl py-6">
+  <div class="container">
+      <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="row img-twice position-relative h-100">
+                  <div class="col-6">
+                      <img class="img-fluid rounded" src="{% static 'img/dessert-5105032_1280.jpg' %}" alt="">
+                  </div>
+                  <div class="col-6 align-self-end">
+                      <img class="img-fluid rounded" src="{% static 'img/macarons-2548827_1280.jpg' %}" alt="">
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="h-100">
+                  <h1 class="display-6 mb-4">We Bake Every Item From The Core Of Our Hearts</h1>
+                  <p>At our bakery, we take pride in offering a delightful selection of freshly baked goods made with the finest ingredients and a touch of love. From artisan breads with perfectly crisp crusts to decadent pastries that melt in your mouth, every bite is crafted to perfection. Our menu features a variety of cakes for every occasion, from classic flavors to custom-designed masterpieces, as well as cookies, muffins, and seasonal treats to satisfy any craving. We also cater to dietary preferences with gluten-free, vegan, and low-sugar options. Whether you're stopping by for a morning croissant, a mid-day snack, or a special celebration, we’re here to bring joy to your table with every creation.</p>
+                  <div class="row g-2 mb-4">
+                      <div class="col-sm-6">
+                          <i class="fa fa-check text-primary me-2"></i>Quality Products
+                      </div>
+                      <div class="col-sm-6">
+                          <i class="fa fa-check text-primary me-2"></i>Custom Products
+                      </div>
+                      <div class="col-sm-6">
+                          <i class="fa fa-check text-primary me-2"></i>Online Order
+                      </div>
+                      <div class="col-sm-6">
+                          <i class="fa fa-check text-primary me-2"></i>Home Delivery
+                      </div>
+                  </div>
+                 
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="animation">
+<div class="uk-child-width-1-3@s" uk-grid>
+    <div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-bottom-right">
+            <p class="uk-text-center"><img src="{% static 'img/bread-4046506_1280.jpg' %}" alt=""></p>
+        </div>
+    </div>
+    <div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-top-center">
+            <p class="uk-text-center" style="font-size: 47px; color: brown;">"From our oven to your table."</p>
+        </div>
+    </div>
+    <div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up uk-transform-origin-bottom-center">
+            <p class="uk-text-center"><img src="{% static 'img/bread-4046506_1280.jpg' %}" alt=""></p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--Klintet review2 -->
+
+   
+<section>
+  <div class=" container">
+      <h1 class="section-header">Client Review <span>More Than 10000+ Customers Trusted Us</span></h1>
+      <div class="testimonials">
+          
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="single-item">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-5">
+                            <div class="profile">
+                                <div class="img-area">
+                                    <img src="{% static 'img/1.webp' %}" alt="">
+                                </div>
+                                <div class="bio">
+                                    <h2>Dave Wood</h2>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="content">
+                                <p><span><i class="fa fa-quote-left"></i></span> You can tell everything here is made fresh daily. The difference in quality is incredible. Their apple pie tastes just like grandma used to make, and their muffins are always moist and packed with flavor. You can’t go wrong with anything here!</p>
+                                <p class="socials">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-behance"></i>
+                                    <i class="fa fa-pinterest"></i>
+                                    <i class="fa fa-dribbble"></i>
+                                    <i class="fa fa-vimeo"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="single-item">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="profile">
+                                <div class="img-area">
+                                    <img src="{% static 'img/2.jpg' %}" alt="">
+                                </div>
+                                <div class="bio">
+                                    <h2>Martin Guptill</h2>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content">
+                                <p><span><i class="fa fa-quote-left"></i></span>The perfect spot for coffee and a quick treat. Their lattes are smooth and creamy, and their danishes are melt-in-your-mouth delicious. The raspberry cream cheese danish is my personal favorite. Highly recommend stopping by for a mid-morning pick-me-up!</p>
+                                <p class="socials">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-behance"></i>
+                                    <i class="fa fa-pinterest"></i>
+                                    <i class="fa fa-dribbble"></i>
+                                    <i class="fa fa-vimeo"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="single-item">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="profile">
+                                <div class="img-area">
+                                    <img src="{% static 'img/3.avif' %}" alt="">
+                                </div>
+                                <div class="bio">
+                                    <h2>Stephen Jones</h2>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content">
+                                <p><span><i class="fa fa-quote-left"></i></span>As someone with gluten sensitivities, finding a good bakery is tough. But this place exceeded all expectations! Their gluten-free brownies are rich and fudgy, and their GF bread is soft and flavorful. It’s a lifesaver for anyone with dietary restrictions.</p>
+                                <p class="socials">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-behance"></i>
+                                    <i class="fa fa-pinterest"></i>
+                                    <i class="fa fa-dribbble"></i>
+                                    <i class="fa fa-vimeo"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="single-item">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="profile">
+                                <div class="img-area">
+                                    <img src="{% static 'img/4.jpg' %}" alt="">
+                                </div>
+                                <div class="bio">
+                                    <h2>Stephen Jones</h2>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content">
+                                <p><span><i class="fa fa-quote-left"></i></span>If you have a sweet tooth, this place is paradise! Their chocolate chip cookies are gooey on the inside, crispy on the outside, and the perfect balance of sweet and salty. The red velvet cupcakes are another must-try—moist, rich, and topped with dreamy cream cheese frosting.</p>
+                                <p class="socials">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-behance"></i>
+                                    <i class="fa fa-pinterest"></i>
+                                    <i class="fa fa-dribbble"></i>
+                                    <i class="fa fa-vimeo"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+
+
+{% endblock %}
+

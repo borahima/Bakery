@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{%  load static %}
+{% block content %}
+<!--grid-->
+<div class="aboutus">
+<div class="container text-center">
+  <div class="row g-4">
+    <div class="col-12 col-md-12  col-lg-6">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'img/bakery-1868925_1280.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/cupcakes-5116009_1280.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/bread-8503298_1280.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="col">
+      <h1>Bakery Hima</h1>
+    
+      <div class="content">
+        <p>Welcome to Hima, where passion meets the art of baking! We are a family-owned bakery dedicated to creating delicious, handcrafted treats made with love and the finest ingredients. Our bakery has been serving the local community for over 20 years, and we pride ourselves on baking everything from scratch, just like Grandma used to.
+          From our warm, freshly baked breads and mouth-watering pastries to our custom cakes for special occasions, each item is made with the utmost care and attention to detail. Whether you're grabbing a quick coffee and croissant or ordering a custom birthday cake, we believe in offering something for everyone to enjoy.
+        </p>
+        <p class="more-text">Our commitment to quality means we only use the best ingredients—locally sourced whenever possible—to ensure that every bite is as fresh and flavorful as the last. We also believe in sustainable practices, which is why we strive to minimize waste and use eco-friendly packaging.
+          At Hima Bakery, we don’t just make food; we create moments of joy. Whether you're visiting us for your daily bread or celebrating a special occasion, we aim to make every experience sweet and memorable.
+        </p>
+        <span class="toggle-btn rounded-pill py-2 px-4">Show More</span>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<!--ekipi-->
+<div class="container-xxl py-6">
+  <div class="container">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+          
+          <h1 class="display-6 mb-4">We're Super Professional At Our Skills</h1>
+      </div>
+      <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item text-center rounded overflow-hidden">
+                  <img class="img-fluid" src="{% static 'img/team-1.jpg' %}" alt="">
+                  <div class="team-text">
+                      <div class="team-title">
+                          <h5>James Alexander </h5>
+                          <span>Baker</span>
+                      </div>
+                      <div class="team-social">
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="team-item text-center rounded overflow-hidden">
+                  <img class="img-fluid" src="{% static 'img/team-2.jpg' %}" alt="">
+                  <div class="team-text">
+                      <div class="team-title">
+                          <h5>Daniel Joseph</h5>
+                          <span>Baker</span>
+                      </div>
+                      <div class="team-social">
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="team-item text-center rounded overflow-hidden">
+                  <img class="img-fluid" src="{% static 'img/team-3.jpg' %}" alt="">
+                  <div class="team-text">
+                      <div class="team-title">
+                          <h5>Michael Anthony</h5>
+                          <span>Pastry chef</span>
+                      </div>
+                      <div class="team-social">
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item text-center rounded overflow-hidden">
+                  <img class="img-fluid" src="{% static 'img/team-4.jpg' %}" alt="">
+                  <div class="team-text">
+                      <div class="team-title">
+                          <h5>William Thomas</h5>
+                          <span>Pastry chef</span>
+                      </div>
+                      <div class="team-social">
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item text-center rounded overflow-hidden">
+                <img class="img-fluid" src="{% static 'img/team-5.png' %}" alt="">
+                <div class="team-text">
+                    <div class="team-title">
+                        <h5>Olivia Grace</h5>
+                        <span>Baker</span>
+                    </div>
+                    <div class="team-social">
+                        <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="team-item text-center rounded overflow-hidden">
+              <img class="img-fluid" src="{% static 'img/team-6.png' %}" alt="">
+              <div class="team-text">
+                  <div class="team-title">
+                      <h5>Sophia Marie</h5>
+                      <span>Baker</span>
+                  </div>
+                  <div class="team-social">
+                      <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="team-item text-center rounded overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/team7.png' %}" alt="">
+            <div class="team-text">
+                <div class="team-title">
+                    <h5>Christopher David</h5>
+                    <span>Baker</span>
+                </div>
+                <div class="team-social">
+                    <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div class="team-item text-center rounded overflow-hidden">
+          <img class="img-fluid" src="{% static 'img/team-8.png' %}" alt="">
+          <div class="team-text">
+              <div class="team-title">
+                  <h5>Emma Rose</h5>
+                  <span>Baker</span>
+              </div>
+              <div class="team-social">
+                  <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-square btn-light rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+      </div>
+  </div>
+</div>
+<!--Mission-->
+<div class="containerMission text-center">
+  <div class="row">
+    <div class="coltext">
+      Our mission
+    </div>
+    <div class="col">
+      At Hima, our mission is simple: to bring joy to every bite. We are dedicated to creating delicious, high-quality baked goods that not only taste incredible but also bring people together. Our focus is on crafting fresh, made-from-scratch treats with the finest ingredients, ensuring that every item we bake is a reflection of our passion for baking.
+      We strive to build a welcoming space where our community can gather, savor, and celebrate life’s sweet moments—whether it’s over a morning pastry or a special cake for a loved one’s milestone. Our commitment to quality, creativity, and sustainability drives us to bake with care, using local ingredients and eco-friendly practices whenever possible.
+    </div> 
+  </div>
+</div>
+
+<div class="containerVision text-center">
+  <div class="row">
+    <div class="coltext">
+      At Hima, our vision is to become a beloved cornerstone of the community, known for our dedication to quality, creativity, and the simple joy that a freshly baked treat can bring. We aim to create a space where people of all ages can come together to enjoy the comforting, nostalgic flavors of homemade pastries, breads, and cakes, all made with the finest ingredients.
+      Ultimately, our vision is to be more than just a bakery—we want to be a source of happiness, comfort, and shared moments for everyone who walks through our doors.
+      </div>
+    <div class="col">
+     Our vision
+    </div> 
+  </div>
+</div>
+
+{% endblock %}

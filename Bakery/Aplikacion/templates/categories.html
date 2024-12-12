@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="container">
+   
+    <h1 style="font-size: 50px; color: rgb(160, 72, 72); text-align: center;font-family:Sofia, sans-serif";>{{detailCategory.category_name}}</h1>
+    <div class="row" >
+        {% for item in itemsCat %}
+        <div class="col-4 col-md-6 col-lg-4 mb-5" >
+            <div class="card h-100">
+                <img src="{{item.item_image.url}}" class="card-img-top h-100" alt="...">
+                <div class="card-body" >
+                    <h5 class="card-title" style="font-size: 20px;">{{item.item_name}}</h5>
+                    <p><strong> {{item.item_price}}$</strong></p>
+                    <p class="card-text" style="font-size: 13px;">{{item.item_description}}</p>
+                    <a href="{% url 'detailItemPage' item.pk %}" class="btn " style="color: rgb(196, 173, 173);background-color: brown;">More details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
